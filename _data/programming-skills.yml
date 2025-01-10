@@ -1,15 +1,15 @@
 - name: Python
   percentage: 95
-  color: danger
+  color: red
 
 - name: SciKit-Learn
   percentage: 85
-  color: primary
+  color: blue
 
 - name: TensorFlow
   percentage: 80
-  color: focus
+  color: green
 
 - name: SeaBorn
   percentage: 95
-  color: secondary
+  color: yellow
