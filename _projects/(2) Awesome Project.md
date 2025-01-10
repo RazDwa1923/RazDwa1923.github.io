@@ -1,20 +1,7 @@
 ---
-name: The Movies Project
-tools: [C#, XML, WPF]
-image: https://www.sketchappsources.com/resources/source-image/movie-badges-jurajjurik.png
-description: This project has an individual showcase page, not just a direct link to the project site or repo. Now you have more space to describe your awesome project!
+name: Solving DeFi Pool Selection Problem
+tools: [Python, Pandas, SeaBorn, Matplotlib, DeFi]
+image: https://miro.medium.com/v2/resize:fit:4800/format:webp/0*dp790UIeKliJTYJn
+description: This article proposes a novel approach to solve the pool selection problem in DeFi. The approach utilizes percentile ranking pools based on size and returns over a period of time. The article also provides a Python implementation of the proposed approach.
+external_url: https://medium.com/coinmonks/solving-the-pool-selection-problem-in-defi-fa85462f77fa
 ---
-
-# The Movies Project
-
-The Movies Project is something like **Netflix**, the only difference is that **it's not real**! It doesn't exist! I just created it to demonstrate how the **showcase** page looks like and how you can write whatever you want with full markdown support.
-
-![preview](https://www.sketchappsources.com/resources/source-image/we-were-soldiers-landing-page-dbruggisser.jpg)
-
-## Search Movies
-
-![search](https://www.sketchappsources.com/resources/source-image/microsoft-windows-10-virtual-keyboard-diogo-sousa.png)
-
-<p class="text-center">
-{% include elements/button.html link="https://github.com/yousinix/portfolYOU" text="Learn More" %}
-</p>
