@@ -1,7 +1,7 @@
 ---
-name: PlaceHolder Project
-tools: [nothing, important]
-image: https://www.sketchappsources.com/resources/source-image/project-neon-groove-music-ui.png
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-external_url: https://www.google.com
+name: ML Clustering of Crypto DeFi Pools
+tools: [Python, Pandas, Scikit-learn, K-means Clustering]
+image: https://miro.medium.com/v2/resize:fit:4800/format:webp/0*y22pAGyibN9SI3Wo
+description: Using k-means clustering to identify DeFi pools with similar characteristics.
+external_url: https://medium.com/coinmonks/applying-machine-learning-clustering-in-defi-ddc9f1de2b29
 ---
