@@ -1,17 +1,14 @@
-- title: Student, Harvard CS
-  from: 2014
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Data Scientist and Quantitative Develop, Singapore
+  from: 2022
+  to: Present
+  description:
+    Engineered Python algorithm designed to benchmark DeFi yields, rank top-performing opportunities, and forecast future yields with a notable 70% accuracy. This tool integrates advanced statistical analysis and machine learning techniques, including logistic and linear regression, Decision Tree classifiers, and Random Forest regressors/classifiers, to provide a competitive edge in yield prediction.
 
-- title: Software Engineer, Google, UK
-  from: 2018
-  to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Finance and Strategy Professional and Executive, Various, Canada, Spain, USA and Singapore
+  from: 2010
+  to: Present
+  description:
+  Driving the strategic planning process with a keen eye on emerging technology trends, unlocking new efficiencies and cultivating partnerships across business, IT, and finance teams, culminating in a 15% improvement in spend efficiency in the APAC region in 2023.
+  Articulating complex financial performance data and insights to global senior leadership, including the CFO and CTO, as well as the company's clients.
+  Leading financial analysis and modeling for regional delivery center, contractor consolidation and FTE restructuring initiatives looking to save €30 million in IT costs over 5 years, employing detailed financial models to steer strategic initiatives.
+  Led the development and execution of a comprehensive go-to-market strategy for the company's entry into the South American duty-free retail market, focusing on key international airports and border locations

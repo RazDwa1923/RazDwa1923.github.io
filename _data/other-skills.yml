@@ -1,7 +1,15 @@
-- name: Adobe Photoshop
+- name: Corporate Finance
   percentage: 95
   color: info
 
-- name: Adobe Illustrator
+- name: Financial Modelling
   percentage: 90
   color: success
+
+- name: Statistical Analysis
+  percentage: 95
+  color: secondary
+
+- name: Data Visualization
+  percentage: 95
+  color: gray
