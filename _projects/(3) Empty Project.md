@@ -1,7 +1,7 @@
 ---
-name: Empty Project
-tools: [Node JS, JavaScript, HTML, CSS]
-image:
-description: This project has no image or showcase page, but it is still a beautiful project inside out!
-external_url: https://github.com/yousinix
+name: DeFi Data Visualization
+tools: [Python , MatplotLib, Seaborn, Plotly, Pandas, Numpy]
+image: assets/9.png
+description: This project uses data from DeFillama to visualize the native DeFi yield over time. The aim of the project is to better understand the development of the space.
+external_url: https://github.com/RazDwa1923/DeFi_Viz
 ---
