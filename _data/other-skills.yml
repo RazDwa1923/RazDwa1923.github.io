@@ -1,10 +1,10 @@
 - name: Corporate Finance
   percentage: 95
-  color: info
+  color: primary
 
 - name: Financial Modelling
   percentage: 90
-  color: success
+  color: danger
 
 - name: Statistical Analysis
   percentage: 95
@@ -12,4 +12,4 @@
 
 - name: Data Visualization
   percentage: 95
-  color: gray
+  color: focus

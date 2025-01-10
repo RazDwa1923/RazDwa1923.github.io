@@ -8,8 +8,8 @@
 
 - name: TensorFlow
   percentage: 80
-  color: secondary
+  color: focus
 
 - name: SeaBorn
   percentage: 95
-  color: focus
+  color: secondary
