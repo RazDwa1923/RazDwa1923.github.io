@@ -1,7 +1,7 @@
 ### Site Settings ###
 title               : Karol's Data Science Portfolio
 description         : >-
-                     I turn financial data into decisons using Machine Learning.
+                     I turn financial data into decisions using Machine Learning.
 baseurl             : ""            # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : RazDwa1923/RazDwa1923      # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : yousinix/portfolYOU
