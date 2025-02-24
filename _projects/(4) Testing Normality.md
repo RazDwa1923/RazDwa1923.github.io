@@ -1,5 +1,5 @@
 ---
-name: Testing For Financial Data Normality
+name: Testing For Normality in Financial Data
 tools: [Pandas, Numpy, Statsmodels, Matplotlib]
 image: /Assets/Normal_dist.png
 description: Testing financial data for normality using Python libraries.
