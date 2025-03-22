@@ -1,4 +1,4 @@
-- title: Data Scientist and Quantitative Developor, Singapore
+- title: Data Scientist and Quantitative Developer, Singapore
   from: 2022
   to: Present
   description: "My data science work focuses on automating investment decision-making across digital assets and traditional finance. I developed a Python algorithm that benchmarks DeFi yields, ranks top-performing opportunities, and forecasts future yields with 90% accuracy. This tool leverages advanced statistical analysis and machine learning techniques, including logistic and linear regression, Decision Tree classifiers, and Random Forest models, to deliver a competitive edge in yield prediction. Currently, I’m developing an algorithm to predict changes in P/E ratios using fundamental financial data."
