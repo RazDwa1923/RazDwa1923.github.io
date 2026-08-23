@@ -1,6 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap');
 
 // ---------------------------------------------------------------------------
+// GitHub Pages' Jekyll/remote-theme build resolves `@import "variables"` (and
+// `"theme-dark"`) inside the REMOTE theme's own copies, ignoring our local
+// _sass/_variables.scss and _sass/_theme-dark.scss overrides entirely. So
+// instead of relying on those files, we reassign the variables we care about
+// right here (this only affects rules below this point, in this file) and
+// redeclare the handful of theme-native selectors that were already compiled
+// with the old value before this file loads, as plain CSS so they win by
+// source order.
+// ---------------------------------------------------------------------------
+
+$primary: #d99a44;
+$dark-900: #0b0f16;
+$dark-600: #141b26;
+$dark-300: #1c2431;
+
+.link-after,
+.nav-link::after,
+.navbar-brand::after,
+.nav-item.active::after {
+  background: $primary;
+}
+
+.timeline-body:after {
+  background-color: $primary;
+}
+
+.timeline-body .timeline-item:after {
+  border-color: $primary;
+}
+
+[data-theme="dark"] body {
+  background-color: $dark-900;
+}
+
+[data-theme="dark"] .card {
+  background-color: $dark-600;
+}
+
+[data-theme="dark"] input {
+  background-color: $dark-300;
+}
+
+[data-theme="dark"] .timeline-body .timeline-item:after {
+  background-color: $dark-900;
+}
+
+// ---------------------------------------------------------------------------
 // Bootstrap is loaded precompiled from a CDN, so it never sees our $primary
 // override above. Re-point the handful of Bootstrap classes this theme
 // actually uses onto our accent color so buttons and badges match the rest
