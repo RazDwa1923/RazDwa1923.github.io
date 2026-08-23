@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap');
+
+// ---------------------------------------------------------------------------
+// Bootstrap is loaded precompiled from a CDN, so it never sees our $primary
+// override above. Re-point the handful of Bootstrap classes this theme
+// actually uses onto our accent color so buttons and badges match the rest
+// of the site instead of Bootstrap's default blue.
+// ---------------------------------------------------------------------------
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:not(:disabled):not(.disabled):active {
+    background-color: darken($primary, 8%);
+    border-color: darken($primary, 10%);
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 0.2rem rgba($primary, 0.5);
+  }
+}
+
+.btn-outline-primary {
+  color: $primary;
+  border-color: $primary;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:not(:disabled):not(.disabled):active {
+    background-color: $primary;
+    border-color: $primary;
+    color: white;
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 0.2rem rgba($primary, 0.5);
+  }
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+.border-primary {
+  border-color: $primary !important;
+}
+
+// ---------------------------------------------------------------------------
+// Hero / Landing
+// ---------------------------------------------------------------------------
+
+.hero {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.hero-photo {
+  width: 140px;
+}
+
+.hero-eyebrow {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $primary;
+}
+
+.hero-headline {
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin: 0.5rem 0 0.75rem;
+}
+
+.hero-subhead {
+  font-size: 1.1rem;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-cta {
+  margin-top: 1.75rem;
+
+  .btn {
+    border-radius: $rounded-borders;
+    padding: 0.55rem 1.5rem;
+    font-weight: 600;
+    margin: 0.25rem;
+  }
+}
+
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 2.5rem auto 0.5rem;
+}
+
+.hero-stat {
+  text-align: center;
+  min-width: 120px;
+
+  .num {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 700;
+    font-size: 2rem;
+    color: $primary;
+    line-height: 1.1;
+  }
+
+  .label {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    opacity: 0.65;
+    max-width: 150px;
+    margin: 0.35rem auto 0;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Project category badges
+// ---------------------------------------------------------------------------
+
+.project.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.cat-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 5;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.35em 0.75em;
+  border-radius: 999px;
+  color: white;
+  background-color: $secondary;
+}
+
+.cat-defi-crypto {
+  background-color: #3fb8af;
+}
+
+.cat-quant-trading {
+  background-color: #d99a44;
+}
+
+.cat-ai-llm {
+  background-color: #8b7fd6;
+}
+
+// ---------------------------------------------------------------------------
+// Project filter bar
+// ---------------------------------------------------------------------------
+
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+}
+
+.project-filter-btn {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background: none;
+  border: 1.5px solid rgba(128, 128, 128, 0.35);
+  border-radius: 999px;
+  padding: 0.4em 1.1em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  @extend .text-themed;
+
+  &:hover {
+    border-color: $primary;
+  }
+
+  &.active {
+    background-color: $primary;
+    border-color: $primary;
+    color: white;
+  }
+}
+
+.project-card-wrap.is-hidden {
+  display: none;
+}
+
+// ---------------------------------------------------------------------------
+// About page framing
+// ---------------------------------------------------------------------------
+
+.about-lede {
+  font-size: 1.15rem;
+  max-width: 720px;
+}

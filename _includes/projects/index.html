@@ -1,0 +1,104 @@
+{%- assign categories = "" | split: "" -%}
+{%- for project in site.projects -%}
+  {%- if project.track -%}
+    {%- unless categories contains project.track -%}
+      {%- assign categories = categories | push: project.track -%}
+    {%- endunless -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{% if categories.size > 1 %}
+<div class="project-filters">
+  <button type="button" class="project-filter-btn active" data-filter="all">All</button>
+  {%- for cat in categories -%}
+  <button type="button" class="project-filter-btn" data-filter="{{ cat | slugify }}">{{ cat }}</button>
+  {%- endfor -%}
+</div>
+{% endif %}
+
+<div class="card-columns m-3 mt-5">
+
+  <!-- Remote Projects -->
+  {% for remote_project in page.remote_projects %}
+
+    {%- for repo in site.github.public_repositories -%}
+
+      {%- if remote_project == repo.name -%}
+
+        {%- assign project = repo -%}
+        {%- assign words = project.name | split: '-' -%}
+
+        {%- capture titlecase -%}
+          {%- for word in words -%}
+            {{ word | capitalize | append: ' ' }}
+          {%- endfor -%}
+        {%- endcapture -%}
+
+        {%- assign project_type     = "remote" -%}
+        {%- assign project_id       = project.name -%}
+        {%- assign project_img      = false -%}
+        {%- assign project_name     = titlecase | strip -%}
+        {%- assign project_desc     = project.description -%}
+        {%- assign project_url      = project.html_url -%}
+        {%- assign project_tools    = project.topics -%}
+        {%- assign project_track = nil -%}
+        {%- assign external         = true -%}
+
+        {% include projects/project-card.html %}
+
+      {%- endif -%}
+
+    {%- endfor -%}
+
+  {% endfor %}
+
+  <!-- Local Projects -->
+  {% for project in site.projects %}
+
+    {%- assign project_type     = "local" -%}
+    {%- assign project_id       = project.name | slugify -%}
+    {%- assign project_img      = project.image -%}
+    {%- assign project_name     = project.name -%}
+    {%- assign project_desc     = project.description -%}
+    {%- assign project_tools    = project.tools -%}
+    {%- assign project_track = project.track -%}
+
+    {%- if project.external_url -%}
+      {%- assign project_url = project.external_url -%}
+      {%- assign external    = true -%}
+    {%- else -%}
+      {%- assign project_url = project.url | relative_url -%}
+      {%- assign external    = false -%}
+    {%- endif -%}
+
+    {% include projects/project-card.html %}
+
+  {% endfor %}
+
+</div>
+
+{% if categories.size > 1 %}
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var buttons = document.querySelectorAll(".project-filter-btn");
+    var cards = document.querySelectorAll(".project-card-wrap");
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        buttons.forEach(function (b) { b.classList.remove("active"); });
+        btn.classList.add("active");
+
+        var filter = btn.getAttribute("data-filter");
+
+        cards.forEach(function (card) {
+          if (filter === "all" || card.getAttribute("data-category") === filter) {
+            card.classList.remove("is-hidden");
+          } else {
+            card.classList.add("is-hidden");
+          }
+        });
+      });
+    });
+  });
+</script>
+{% endif %}

@@ -1,0 +1,11 @@
+- name: Prompt Engineering & LLM APIs
+  percentage: 75
+  color: info
+
+- name: Applied GenAI for Finance
+  percentage: 65
+  color: warning
+
+- name: RAG & Vector Search Fundamentals
+  percentage: 60
+  color: success

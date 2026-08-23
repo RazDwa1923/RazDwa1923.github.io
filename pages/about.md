@@ -7,21 +7,24 @@ weight: 3
 
 # **About Me**
 
-Hi I am **Karol** :wave:,<br>
+Hi, I am **Karol** :wave:,<br>
 
-I am a Data Scientist specializing in Machine Learning with Financial Data, covering both traditional and digital asset markets.  
+I am a data scientist specializing in machine learning with financial data, covering both traditional and digital asset markets.
 
-My journey into programming and advanced analytics has been unconventional. With over a decade of experience in corporate strategy and finance, I have collaborated with some of the world's largest companies to make critical financial and business decisions.  
+My path into programming and advanced analytics has been unconventional. With over a decade of experience in corporate strategy and finance, I have worked with some of the world's largest companies to make critical financial and business decisions.
 
-Driven by curiosity and a desire to work smarter and more efficiently, I discovered coding and began developing my own algorithms, models, and data applications.  
+Driven by curiosity and a desire to work smarter and more efficiently, I discovered coding and began developing my own algorithms, models, and data applications to enhance financial decision-making.
 
-My current specialty is applying advanced analytics to financial problems. Given the statistical limitations of financial data, many machine learning models cannot be used out of the box. I excel in exploring data and making the necessary adjustments to time series data to ensure it can be utilized with the latest machine learning and deep learning techniques.  
+Today, my focus is on applying advanced analytics to financial problems. Given the statistical challenges of financial data, many machine learning models cannot be used out of the box. I specialize in exploring, transforming, and optimizing time series data so it can be effectively used with the latest machine learning and deep learning techniques.
 
-In addition to my professional experience, I hold an undergraduate degree in Economics and Finance from the University of Toronto and a master's degree in Finance and Business from ESADE Business School in Spain. I'm also a certified Data Scientist with DataCamp.
+I'm now extending that same toolkit into generative AI — exploring how large language models can automate the qualitative side of financial analysis, like commentary and reporting, that traditional statistical models can't reach.
+
+I hold a Bachelor's degree in Economics and Finance from the University of Toronto and a Master's in Finance and Business from ESADE Business School in Spain. I'm also a certified Data Scientist through DataCamp.
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
 {% include about/skills.html title="Financial Skills" source=site.data.other-skills %}
+{% include about/skills.html title="AI & Emerging Tech" source=site.data.aiskills %}
 </div>
 
 <div class="row">
