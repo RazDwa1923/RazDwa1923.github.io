@@ -4,6 +4,7 @@ track: Finance Analytics
 tools: [Python, Pandas, Scikit-learn, Matplotlib, DeFiLlama]
 image: /assets/img/pairplot.png
 description: A transparent DeFi-pool research workflow that collects snapshots, ranks pools using a documented liquidity-and-yield score, visualises the current universe, and provides time-aware ML evaluation foundations.
+external_url: https://github.com/RazDwa1923/defi-analytics-research
 ---
 
 ## DeFi Analytics Research
